@@ -3,7 +3,7 @@
 @section('content')
 <div class="container mt-5">
     <h2>Monte seu combo 🍽️</h2>
-    <form action="#" method="POST">
+    <form onsubmit="mostrarAviso(event)">
         @csrf
         <div class="mb-3">
             <label for="pastel" class="form-label">Escolha seu pastel:</label>
@@ -23,7 +23,22 @@
             </select>
         </div>
 
-        <button type="submit" class="btn btn-success">Confirmar Pedido</button>
+        <button type="submit" class="btn btn-warning">Confirmar Pedido</button>
+
+        <div id="aviso-container" class="mt-3"></div>
     </form>
 </div>
+
+<script>
+    function mostrarAviso(event) {
+        event.preventDefault();
+
+        const avisoContainer = document.getElementById('aviso-container');
+        avisoContainer.innerHTML = `
+            <div class="alert alert-info text-center" role="alert">
+                Esta funcionalidade será ativada em breve. Aguarde as próximas atualizações! 🚧
+            </div>
+        `;
+    }
+</script>
 @endsection
