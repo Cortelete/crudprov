@@ -10,10 +10,10 @@ class PastelController extends Controller
 {
     public function index()
     {
-        $pasteis = Pastel::with('acompanhamento')->get();
+        $pasteis = Pastel::all(); // Use o 'all()' se você não estiver usando relacionamento com Acompanhamento
         return view('pasteis.index', compact('pasteis'));
     }
-
+    
     public function create()
     {
         $acompanhamentos = Acompanhamento::all();

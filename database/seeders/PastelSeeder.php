@@ -34,7 +34,7 @@ class PastelSeeder extends Seeder
             ['sabor' => 'Café com Catupiry (modo hardcore)', 'tamanho' => 'Pequeno', 'acompanhamento_id' => 2],
             ['sabor' => 'Segunda-feira Supreme', 'tamanho' => 'Médio', 'acompanhamento_id' => 3],
             ['sabor' => 'Refatoração de Carne Louca', 'tamanho' => 'Gigante que mata aula', 'acompanhamento_id' => 4],
-            ['sabor' => 'MVC: Mussarela, Vinagrete e Calabresa', 'tamanho' => 'Grande', 'acompanhamento_id' => 5],
+            ['sabor' => 'MVC – Mussarela, Vinagrete e Calabresa', 'tamanho' => 'Grande', 'acompanhamento_id' => 5],
         ]);
     }
 }
